@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+django-ckeditor = "*"
+pillow = "*"
+pylint = "*"
+pylint-django = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+python_full_version = "3.10.0"
+
+[scripts]
+RUN = "python manage.py runserver 8081"
+NAPP = "python manage.py startapp"
+MK = "python manage.py makemigrations"
+MI = "python manage.py migrate"
+SU = "python manage.py createsuperuser"
